@@ -23,6 +23,8 @@ Commands:
   logout                 Logout the bot from the server. This is required when moving a bot to a different bot server. See https://core.telegram.org/bots/api#logout
   me|info                Get information about the bot
   set-webhook [options]  Set the bot webhook URL
+  get-webhook-info       Get the current webhook configuration
+  del-webhook            Delete the current webhook configuration
   poll                   Poll for a message, this will remove a webhook configuration if it is set.
   send [options]         Send a message to a chat
   help [command]         display help for command
