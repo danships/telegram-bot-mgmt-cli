@@ -18,8 +18,7 @@ export function getBotOptions(commandOptions) {
   if (serverUrl) {
     telegramOptions.baseApiUrl = serverUrl;
   }
-
-  return { token, telegramOptions };
+  return { token, options: telegramOptions };
 }
 
 export const errorWrapper = (fn) => {

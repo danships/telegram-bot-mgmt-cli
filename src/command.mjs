@@ -86,7 +86,7 @@ program
       const { token, options } = getBotOptions(commandOptions);
 
       const bot = new TelegramBot(token, options);
-      const result = await bot.deleteWebHook();
+      await bot.deleteWebHook();
       console.log('The webhook information has been removed.');
     })
   );
