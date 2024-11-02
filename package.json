@@ -1,0 +1,43 @@
+{
+  "name": "telegram-bot-mgmt-cli",
+  "version": "0.1.1",
+  "description": "Manage/configure your Telegram bot, execute some often-used commands",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danships/telegram-bot-mgmt-cli.git"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.MD"
+  ],
+  "keywords": [
+    "telegram",
+    "bot",
+    "cli",
+    "command"
+  ],
+  "prettier": "eslint-config-daangemist/.prettierrc",
+  "author": "debuggingdan (danships)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danships/telegram-bot-mgmt-cli/issues"
+  },
+  "bin": {
+    "telegram-bot-mgmt-cli": "./bin/telegram-bot-mgmt-cli"
+  },
+  "homepage": "https://github.com/danships/telegram-bot-mgmt-cli#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "eslint-config-daangemist": "^1.2.2",
+    "prettier": "^3.3.3"
+  }
+}
