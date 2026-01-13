@@ -4,7 +4,8 @@
   "description": "Manage/configure your Telegram bot, execute some often-used commands",
   "main": "src/index.js",
   "scripts": {
-    "test": "tsc"
+    "test": "tsc",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
