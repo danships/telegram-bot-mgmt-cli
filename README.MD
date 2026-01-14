@@ -54,3 +54,25 @@ The following operations are supported:
 # Attributions
 
 Based on the awesome `node-telegram-bot-api` library by [yagop](https://github.com/yagop/node-telegram-bot-api).
+
+# Releasing
+
+This package is automatically published to npm when a new git tag is pushed.
+
+## Stable Release
+
+To create a new stable release, create a new git tag with a version number that follows semantic versioning and push it to the repository.
+
+```bash
+git tag v1.2.3
+git push origin v1.2.3
+```
+
+## Beta Release
+
+To create a new beta release, create a new git tag with a version number that includes a pre-release identifier and push it to the repository.
+
+```bash
+git tag v1.2.3-beta.1
+git push origin v1.2.3-beta.1
+```

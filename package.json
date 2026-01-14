@@ -4,7 +4,8 @@
   "description": "Manage/configure your Telegram bot, execute some often-used commands",
   "main": "src/index.js",
   "scripts": {
-    "test": "tsc"
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,6 @@
     "cli",
     "command"
   ],
-  "prettier": "eslint-config-daangemist/.prettierrc",
   "author": "debuggingdan (danships)",
   "license": "MIT",
   "bugs": {
@@ -37,7 +37,16 @@
     "node-telegram-bot-api": "^0.66.0"
   },
   "devDependencies": {
-    "eslint-config-daangemist": "^1.2.2",
     "prettier": "^3.3.3"
+  },
+  "pnpm": {
+    "auditConfig": {
+      "ignoreCves": [
+        "CVE-2023-28155"
+      ],
+      "ignoreGhsas": [
+        "GHSA-p8p7-x288-28g6"
+      ]
+    }
   }
 }
