@@ -28,7 +28,7 @@
     "url": "https://github.com/danships/telegram-bot-mgmt-cli/issues"
   },
   "bin": {
-    "telegram-bot-mgmt-cli": "./bin/telegram-bot-mgmt-cli"
+    "telegram-bot-mgmt-cli": "bin/telegram-bot-mgmt-cli"
   },
   "homepage": "https://github.com/danships/telegram-bot-mgmt-cli#readme",
   "dependencies": {
