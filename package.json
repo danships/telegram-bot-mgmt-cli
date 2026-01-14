@@ -38,5 +38,15 @@
   },
   "devDependencies": {
     "prettier": "^3.3.3"
+  },
+  "pnpm": {
+    "auditConfig": {
+      "ignoreCves": [
+        "CVE-2023-28155"
+      ],
+      "ignoreGhsas": [
+        "GHSA-p8p7-x288-28g6"
+      ]
+    }
   }
 }

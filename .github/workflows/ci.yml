@@ -33,6 +33,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - run: pnpm audit --audit-level moderate --prod
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - run: pnpm audit --audit-level moderate --prod
+
+      - name: Test Telegram Bot Token
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node bin/telegram-bot-mgmt-cli me
